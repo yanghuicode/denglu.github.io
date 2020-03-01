@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset='utf-8'>
+	<style >
+	body{
+		margin: 0;
+		padding: 0;
+		background: url(niu.jpg);		
+		background-repeat: no-repeat;
+  		background-size: cover;
+
+		} 
+	.login{
+		position: absolute;
+		top:50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		width: 400px;
+		padding: 40px;
+		background:rgba(0,0,0,0.2);
+		box-sizing: border-box;
+		box-shadow: 0 15px 25px rgba(0,0,0,.5);
+		border-radius: 10px;
+	}
+	.login h2{
+		margin: 0 0 30px ;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+	}
+
+	.login .input1{
+
+		position: relative;
+	}
+	.login .input1 input{
+		width: 100%;
+		padding: 10px 0;
+		font-size:16px;
+		color: #fff;
+		margin-bottom: 30px;
+		border:none;
+		border-bottom: 1px solid ;
+		background: transparent;
+		outline: none;
+
+	}
+	.login .input1 label{
+	position: absolute;
+	top: 0;
+	left:0;
+	padding: 10px 0;
+	font-size:16px;
+	pointer-events: none;
+	transition: .5s;
+	visibility: hidden;
+		}
+	.login .input1 input:focus
+	{
+	/*top:-18px;
+	left:0; */
+	font-size: 12px;
+	}
+	.login input[type="button"]
+	{
+	background: transparent;
+	border-width:thin;
+	cursor: pointer;
+	color: white;
+	border-style: solid;
+	border-radius:.1px;
+	width: 80PX;
+	height: 30PX;
+
+	}
+
+
+
+ .login label {
+      ...
+
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0;
+      -webkit-transform: translate3d(0, 0, 0) scale(0);
+              transform: translate3d(0, 0, 0) scale(0);
+      -webkit-transition:
+          opacity 0.3s,
+          visibility 0.3s,
+          transform 0.3s,
+          z-index 0.3s;
+          
+              transition:
+                  opacity 0.3s,
+                  visibility 0.3s,
+                  transform 0.3s,
+                  z-index 0.3s;
+ }
+
+	.login input:focus ~ label {
+    z-index: 1;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate3d(0, -36px, 0) scale(1);
+        transform: translate3d(0, -36px, 0) scale(1);
+}
+input::-webkit-input-placeholder{
+	color: #E1CCEC;
+	}
+	</style>
+
+	
+</head>
+<body>
+<div class="login">
+<h2>登录</h2>
+<form>
+<div class="input1">
+<input type="text" name="账号" placeholder="用户名/邮箱/卡号">
+<label>用户名</label>
+</div>
+<div class="input1">
+<input type="password" name="密码" placeholder="密码"> 
+<label>密码</label>
+</div>
+<div class="button">
+<input onclick="alert('你点击了我')" type="button" name="" value="登录" >
+</div>
+</form>
+</div>
+</body>
+</html>
